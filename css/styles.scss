@@ -140,6 +140,8 @@ section#earn {
     .earn-desc {
         button {
             background: #0946E4;
+            padding: 10px 17px;
+            font-size: .75em;
             &:hover {
                 background: rgb(33, 88, 227);
             }
@@ -159,6 +161,7 @@ section#earn {
             position: relative;
             border: none;
             margin: 3px;
+            transition: .5s;
             &:hover {
                 box-shadow: 1px 2px 10px #ccc;
                 cursor: pointer;
@@ -169,14 +172,15 @@ section#earn {
                 font-size: .80em;
                 color: #b0b0b0;
             }
-            .earn-amt {
+            span.earn-amt {
                 color: #0d9e0d;
                 position: absolute;
                 right: 0;
+                padding: 9px;
             }
         }
         img {
-            max-width: 35px;
+            max-width: 40px;
             min-width: 25px;
             margin: 0 .5em;
         }
@@ -227,6 +231,20 @@ section#earn {
 #trustHero {
     padding-top: 50px;
     text-align: center;
+
+    h6 {
+        padding: 30px 0;
+    }
+
+    p {
+        color: #9BA9BF;
+        font-size: .90em;
+        font-weight: 300;
+    }
+
+    a {
+        font-size: .80em;
+    }
     img {
         max-width: 62px;
         margin: 25px;
@@ -238,6 +256,7 @@ section#earn {
         }
         p {
             color: #9BA9BF;
+            padding-bottom: 25px;
         }
     }
 }
@@ -258,11 +277,76 @@ section#earn {
 
 #getStarted {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
+
+    h4 {
+        font-size: .95em;
+    }
 
     img {
-        max-width: 75px;
-        margin: 10px;
+        z-index: 999;
+        max-width: 50px;
+        margin: 25px 0;
         padding-bottom: 15px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100px;
+            background: #333;
+        }
+    }
+}
+
+#earnHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    height: 100%;
+    background: url('../assets/cryptonaut.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    color: #000;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.187);
+    }
+}
+
+#footer {
+    footer {
+        min-height: 60vh;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        margin-top: 100px;
+        font-size: .85em;
+        color: #9BA9BF;
+        text-align: center;
+
+        ul {
+            list-style: none;
+        }
+
+        .footer-logo {
+            color: #1552F0;
+            font-size: 1.25em;
+            margin: .5em 0;
+            font-weight: 500;
+        }
+
+        .footer-lead {
+            margin: 1em 0;
+            color: #000;
+            font-weight: 500;
+        }
     }
 }
