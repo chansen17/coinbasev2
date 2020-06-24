@@ -6,6 +6,7 @@
 
 body {
   background: #eee;
+  overflow-x: hidden;
 }
 
 .jumbotron {
@@ -146,6 +147,7 @@ section#earn .earn-cryptos img {
   font-size: 0.9em;
 }
 #spotlightHero .list-group li {
+  padding: 1.75em;
   border: none;
 }
 #spotlightHero .list-group li img {
