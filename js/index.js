@@ -1,4 +1,3 @@
-require('bootstrap/dist/css/bootstrap.min.css');
 
 let testContainer = document.querySelector('.test');
 let buyBtn = document.querySelector('.buy-btn');
